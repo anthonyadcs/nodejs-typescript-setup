@@ -1,15 +1,16 @@
 {
-  "name": "RESTAURANT-PROJECT",
+  "name": "restaurant-project",
   "version": "1.0.0",
   "main": "index.js",
   "author": "anthonyadcs <anthonydacsilva10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev -r tsconfig-paths/register--respawn --ignore-watch node_modules src/server.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.5.3"
   },
   "dependencies": {
