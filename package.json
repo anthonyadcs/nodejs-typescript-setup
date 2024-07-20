@@ -1,19 +1,22 @@
 {
   "name": "restaurant-project",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "author": "anthonyadcs <anthonydacsilva10@gmail.com>",
-  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register--respawn --ignore-watch node_modules src/server.ts"
+    "build": "tsup src",
+    "start": "tsx src/index.ts",
+    "start:dev": "tsx watch src/index.ts"
   },
+  "author": "anthonyadcs <anthonydacsilva10@gmail.com>",
+  "keywords": [],
+  "license": "ISC",
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.5.3"
-  },
-  "dependencies": {
-    "express": "^4.19.2"
+    "@types/node": "^20.14.11",
+    "tsup": "^8.2.1",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "zod": "^3.23.8"
   }
 }
